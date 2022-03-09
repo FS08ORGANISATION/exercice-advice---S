@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+
+    --Cyan:hsl(193, 38%, 86%);
+    --Green:hsl(150, 100%, 66%);
+    --blue:hsl(217, 19%, 38%);
+    --dark-blue:hsl(217, 19%, 24%);
+    --green-light : rgba(82,255,168,0.4);
+    --font-family : 'Open Sans', sans-serif;
+
+}
+
+*,
+*::after,
+*::before{
+
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+
+    font-size: 68,7%;
+    font-family: var(--font-family) ;
+}
+
+body{
+
+    background-color: #202632;
+    display: grid;
+    grid-template-columns: 250px 400px 250px;
+    grid-template-rows: 100px 250px 100px;
+    position: absolute;
+
+}
+.card{
+    background-color: #313a49;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    
+}
+.title{
+    color: #4dba8c;
+    font-size: small;
+    letter-spacing: 3px;
+    padding: 15px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+p{
+    color: var(--Cyan);
+    text-align: center;
+    font-size: x-large;
+    padding: 0 0 15px 0;}
+
+.card .traits{
+    background-color:rgb(203, 194, 194) ;
+    display: grid;
+    grid-template-columns: 10px 75px 10px 75px 10px;
+    grid-template-rows: 30px ;
+    border: none;
+    height: 1px;
+    padding-bottom: 10px; /*faire descendre le dice*/
+
+}
+.card #hr1{
+    /* height: 1px; */
+    display: flex; 
+    /* grid-column: 2/3; */
+    /* grid-row:1/1; */
+    border: none;
+}
+
+.card #hr2{
+    /* height: 1px; */
+    display: flex;
+    /* grid-column: 5/6; */
+    /* grid-row:1/1; */
+    border: none;
+}
+.traits .fa-duotone{
+    color: #ffff;
+    grid-column: 3/4;
+    /* grid-row: 0/1 ; */
+    font-size:xx-large;
+    font-family:open;
+}
+
+.bouton{
+    padding: 25px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #54feaa;
+    border-style: none;
+
+    
+}
+.dice{
+    padding-top: 2px;
+    width: 15px;
+    height: 16px;
+
+}
